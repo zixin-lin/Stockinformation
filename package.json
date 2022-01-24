@@ -5,7 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "npm run"
+    "export": "npm run build && next export -o _static"
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^1.7.0",
