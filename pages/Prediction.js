@@ -1,4 +1,4 @@
-import Getdata from "../lib/db";
+import Getdata from "../lib/table2";
 import { sql_query } from "../lib/db";
 //import Table from "./table";
 
@@ -14,7 +14,7 @@ export default function Prediction(props) {
     return <div className="content"> 
                 <h1>Welcome to the Today Stock Recommendation page.....</h1>
                 
-                {/*<Table data = {posts} />*/}
+            
                 <Getdata props = {posts} />
                     
             </div>

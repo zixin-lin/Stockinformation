@@ -1,18 +1,17 @@
-import Getdata from "../lib/db";
 import { sql_query } from "../lib/db";
 //import Table from "./table";
+import Getdata from "../lib/table";
 
 
-
-export default function Performance(props) {
+export default function Blog(props) {
     //console.log(props)
  
 
     const {posts} =props
     //console.log(posts)
     if (!posts) return <p>Something went wrong....</p>
-    return <div className="content"> 
-                <h1>Welcome to the Today Stock Recommendation page.....</h1>
+    return <div div className="content"> 
+                <h1>Welcome to the Today Stock Recommendation page</h1>
                 
                 {/*<Table data = {posts} />*/}
                 <Getdata props = {posts} />
@@ -36,4 +35,3 @@ export default function Performance(props) {
       }
   }
  
-
