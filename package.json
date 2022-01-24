@@ -1,0 +1,23 @@
+{
+  "name": "stock",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@auth0/nextjs-auth0": "^1.7.0",
+    "@contentful/rich-text-react-renderer": "^15.11.1",
+    "contentful": "^9.1.5",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "serverless-mysql": "^1.5.4"
+  },
+  "devDependencies": {
+    "eslint": "8.4.0",
+    "eslint-config-next": "12.0.7"
+  }
+}
