@@ -1,4 +1,4 @@
-import Getdata from "./table2"
+import Getdata from "../lib/db";
 import { sql_query } from "../lib/db";
 //import Table from "./table";
 
