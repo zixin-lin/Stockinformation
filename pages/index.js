@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { createClient } from 'contentful'
-import Stockinfo from './Stockinfo'
+import Stockinfo from '../lib/Stockinfo'
 
 export async function getStaticProps() {
 
@@ -29,12 +29,12 @@ export default function Home({recipes}) {
   
   return (
 
-    <div><div className="recipe-list">
+    <div className="recipe-list">
       {recipes.map(recipe => (
         <Stockinfo key={recipe.sys.id} recipe={recipe} />
       ))}
     </div>
-    </div>
+    
     
  
   )
