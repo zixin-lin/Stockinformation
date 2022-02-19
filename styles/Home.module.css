@@ -1,13 +1,13 @@
 
 .daohang{
 	width: 260px;
-	height: 100vh;
+	height: 100%;
 	position: fixed;
 	background-color: black;
 	list-style: none;
-  padding: 0;
-  margin: 0;
-  top: 0;
+  	padding: 0;
+  	margin: 0;
+  	top: 0;
 }
 .logo{
 	margin-bottom: 30px;
@@ -53,9 +53,9 @@
 	width: 100%;
 	list-style: none;
 	background-color: lightgray;
-  top: 0;
-  margin: 0;
-  padding: 0;
+  	top: 0;
+  	margin: 0;
+  	padding: 0;
 }
 .header1 .title{
 	padding-left: 320px;
@@ -88,4 +88,17 @@
 	border: 2px solid lightgray;
 	float: left;
 	margin: 10px;
+}
+
+.content{
+	margin-left: 270px;
+	margin-top: 40px;
+	border-collapse: collapse;
+	text-align: center;
+}
+.content th, #content td{
+	border: 2px solid lightgray;
+}
+.content tr{
+	height: 40px;
 }

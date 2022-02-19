@@ -10,7 +10,7 @@ export default function Blog(props) {
     const {posts} =props
     //console.log(posts)
     if (!posts) return <p>Something went wrong....</p>
-    return <div div className="content"> 
+    return <div className="content"> 
                 <h1>Welcome to the Today Stock Recommendation page</h1>
                 
                 {/*<Table data = {posts} />*/}
