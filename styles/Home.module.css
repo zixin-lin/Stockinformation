@@ -84,7 +84,7 @@
 }
 .content>div{
 	width: 400px;
-	height: 300px;
+	height: 100vh;
 	border: 2px solid lightgray;
 	float: left;
 	margin: 10px;
