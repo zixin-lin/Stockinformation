@@ -54,19 +54,24 @@
 	list-style: none;
 	background-color: lightgray;
   	top: 0;
-  	margin: 0;
-  	padding: 0;
+  	margin:0;
+	padding: 0; 
+	display: flex;
+	position: fixed;
+  	
 }
 .header1 .title{
-	padding-left: 320px;
-	width: 600px;
+	margin:0px;
+	padding-left: 0;
 	background-color: lightgray;
-	float: left;
+	
+}
+.header1 li{
+	flex: 2;
 }
 .header1 .login{
-	width: 200px;
 	text-align: center;
-	float: right;
+	line-height: 50px;
 }
 .header1 .login a{
 	text-decoration: none;
