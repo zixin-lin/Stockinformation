@@ -23,8 +23,8 @@ export default function Prediction(props) {
   export async function getStaticProps(context) {
     try {
         const result = await sql_query(`
-          SELECT * FROM StockPredict
-          LIMIT 10 
+        SELECT Date,Symbol,Exchange,prediction FROM DailyOutputs
+        where Date = (select max(Date) from DailyOutputs)
       `);
       //console.log(result)
       let posts = JSON.parse(JSON.stringify(result))
