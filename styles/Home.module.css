@@ -58,6 +58,7 @@
 	padding: 0; 
 	display: flex;
 	position: fixed;
+	overflow: hidden;
   	
 }
 .header1 .title{

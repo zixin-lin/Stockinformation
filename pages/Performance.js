@@ -22,10 +22,11 @@ export default function Blog(props) {
   export async function getStaticProps(context) {
     try {
         const result = await sql_query(`
-          SELECT * FROM StockPerformance
-          LIMIT 10 
+          SELECT Date,Symbol,Exchange,prediction FROM DailyOutputs
+          where Date = (select max(Date) from DailyOutputs)
+        
       `);
-      //console.log(result)
+      console.log(result)
       let posts = JSON.parse(JSON.stringify(result))
         return {
             props: {posts}// will be passed to our blog page component as prop
